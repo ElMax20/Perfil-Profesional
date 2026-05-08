@@ -201,7 +201,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <div class="absolute -inset-1 bg-cyanAccent rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
                     <div class="relative rounded-lg overflow-hidden border-2 border-cyanAccent/30 shadow-2xl">
                         <!-- El usuario debe colocar su foto llamada "foto_perfil.jpg" en el mismo directorio -->
-                        <img src="foto_perfil.jpg" alt="Max Campoverde" class="w-64 h-64 md:w-80 md:h-80 object-cover filter grayscale hover:grayscale-0 transition-all duration-500" onerror="this.src='https://via.placeholder.com/400x400/112240/64FFDA?text=Max+C'">
+                        <img src="fotos-perfil.jpg" alt="Max Campoverde" class="w-64 h-64 md:w-80 md:h-80 object-cover filter grayscale hover:grayscale-0 transition-all duration-500" onerror="this.src='https://via.placeholder.com/400x400/112240/64FFDA?text=Max+C'">
                         <div class="absolute inset-0 bg-cyanAccent mix-blend-overlay opacity-20 group-hover:opacity-0 transition duration-500"></div>
                     </div>
                 </div>
@@ -397,7 +397,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="relative grid grid-cols-1 md:grid-cols-12 gap-8 items-center" data-aos="fade-up">
                     <div class="md:col-span-7 relative group">
                         <div class="absolute inset-0 bg-cyanAccent mix-blend-overlay opacity-30 group-hover:opacity-0 transition duration-500 rounded-lg z-10"></div>
-                        <img src="img/technova.png" alt="TechNova Website" class="rounded-lg shadow-2xl w-full h-auto object-cover grayscale group-hover:grayscale-0 transition duration-500 border border-lightNavy">
+                        <img src="technova.png" alt="TechNova Website" class="rounded-lg shadow-2xl w-full h-auto object-cover grayscale group-hover:grayscale-0 transition duration-500 border border-lightNavy">
                     </div>
                     <div class="md:col-span-5 md:text-right relative z-20">
                         <p class="font-mono text-cyanAccent text-sm mb-2">Sitio Web Comercial</p>
@@ -432,7 +432,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     </div>
                     <div class="md:col-span-7 relative group md:order-2 order-1">
                         <div class="absolute inset-0 bg-cyanAccent mix-blend-overlay opacity-30 group-hover:opacity-0 transition duration-500 rounded-lg z-10"></div>
-                        <img src="img/rpg.png" alt="RPG Game en Python" class="rounded-lg shadow-2xl w-full h-auto object-cover grayscale group-hover:grayscale-0 transition duration-500 border border-lightNavy">
+                        <img src="rpg.png" alt="RPG Game en Python" class="rounded-lg shadow-2xl w-full h-auto object-cover grayscale group-hover:grayscale-0 transition duration-500 border border-lightNavy">
                     </div>
                 </div>
 
@@ -440,7 +440,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="relative grid grid-cols-1 md:grid-cols-12 gap-8 items-center" data-aos="fade-up">
                     <div class="md:col-span-7 relative group">
                         <div class="absolute inset-0 bg-cyanAccent mix-blend-overlay opacity-30 group-hover:opacity-0 transition duration-500 rounded-lg z-10"></div>
-                        <img src="img/verdad.png" alt="App Verdad o Reto" class="rounded-lg shadow-2xl w-full h-auto object-cover grayscale group-hover:grayscale-0 transition duration-500 border border-lightNavy">
+                        <img src="verdad.png" alt="App Verdad o Reto" class="rounded-lg shadow-2xl w-full h-auto object-cover grayscale group-hover:grayscale-0 transition duration-500 border border-lightNavy">
                     </div>
                     <div class="md:col-span-5 md:text-right relative z-20">
                         <p class="font-mono text-cyanAccent text-sm mb-2">Aplicación Web Interactiva</p>
