@@ -1,36 +1,4 @@
-<?php
-// ==========================================
-// LÓGICA DE PROCESAMIENTO DE FORMULARIO (PHP)
-// ==========================================
-$mensaje_estado = "";
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Sanitización básica de los datos recibidos
-    $nombre = strip_tags(trim($_POST["nombre"]));
-    $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-    $mensaje = trim($_POST["mensaje"]);
 
-    // Validación
-    if (empty($nombre) || empty($mensaje) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $mensaje_estado = "Por favor, completa el formulario correctamente.";
-    } else {
-        // Configuración del correo
-        $destinatario = "campomax82@gmail.com";
-        $asunto = "Nuevo contacto desde Portafolio de $nombre";
-        $contenido = "Nombre: $nombre\n";
-        $contenido .= "Email: $email\n\n";
-        $contenido .= "Mensaje:\n$mensaje\n";
-        $headers = "From: $nombre <$email>\r\n";
-        $headers .= "Reply-To: $email\r\n";
-
-        // Envío del correo (funciona en hostings tradicionales con mail() habilitado)
-        if (mail($destinatario, $asunto, $contenido, $headers)) {
-            $mensaje_estado = "¡Mensaje enviado con éxito! Te contactaré pronto.";
-        } else {
-            $mensaje_estado = "Hubo un error al enviar el mensaje. Inténtalo de nuevo.";
-        }
-    }
-}
-?>
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
 <head>
